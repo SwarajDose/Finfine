@@ -14,7 +14,7 @@ const Header = () => {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <h1 className="text-2xl font-bold bg-gradient-to-r from-finance-primary to-finance-secondary bg-clip-text text-transparent">
-            Money<span className="text-finance-accent">Smart</span>
+            Fin<span className="text-finance-accent">Fine</span>
           </h1>
         </div>
         <div className="flex items-center gap-4">

@@ -2,6 +2,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Clock, Award, Calendar } from "lucide-react";
+// import ChatbotToggle from "../components/ChatbotToggle"; // adjust path if needed
 
 const GoalBasedInvestments = () => {
   return (
@@ -192,6 +193,7 @@ const GoalBasedInvestments = () => {
               <p className="text-sm">
                 <strong>Pro Tip:</strong> The power of compounding works best over long periods. Start early, even with small amounts.
               </p>
+              {/* <ChatbotToggle /> */}
             </div>
           </TabsContent>
         </Tabs>

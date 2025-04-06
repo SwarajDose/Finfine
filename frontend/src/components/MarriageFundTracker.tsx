@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { Heart, Calendar } from "lucide-react";
+// import ChatbotToggle from "../components/ChatbotToggle"; 
 
 const MarriageFundTracker = () => {
   const [targetAmount, setTargetAmount] = useState(50000);
@@ -91,6 +92,7 @@ const MarriageFundTracker = () => {
               <strong>Tip:</strong> For wedding funds, focus on investments with decent returns but high liquidity since you'll need the money on a specific date.
             </p>
           </div>
+          {/* <ChatbotToggle /> */}
         </div>
       </CardContent>
     </Card>

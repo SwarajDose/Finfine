@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Baby, GraduationCap, Wallet } from "lucide-react";
+// import ChatbotToggle from "../components/ChatbotToggle"; 
 
 const ChildrenFuturePlanning = () => {
   const [childAge, setChildAge] = useState(5);
@@ -130,6 +131,7 @@ const ChildrenFuturePlanning = () => {
               <strong>Tip:</strong> Consider education-specific investment plans that provide tax benefits and protection against inflation.
             </p>
           </div>
+          {/* <ChatbotToggle /> */}
         </div>
       </CardContent>
     </Card>

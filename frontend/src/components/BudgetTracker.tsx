@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Budget } from "@/lib/dashboard-api";
+// import ChatbotToggle from "../components/ChatbotToggle"; // adjust path if needed
 
 interface BudgetTrackerProps {
   budgetsData?: {
@@ -79,6 +80,7 @@ const BudgetTracker = ({ budgetsData }: BudgetTrackerProps) => {
               No budget categories found. Add some categories to track your spending.
             </div>
           )}
+          {/* <ChatbotToggle /> */}
         </div>
       </CardContent>
     </Card>

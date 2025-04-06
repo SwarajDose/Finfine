@@ -73,13 +73,13 @@ const AiAssistant = () => {
   return (
     <>
       {/* Chat Button */}
-      <Button
+      {/* <Button
         onClick={toggleChat}
         className="fixed bottom-4 right-4 z-50 rounded-full p-3 w-12 h-12 shadow-lg"
         variant={isOpen ? "outline" : "default"}
       >
         {isOpen ? <X className="h-5 w-5" /> : <Bot className="h-5 w-5" />}
-      </Button>
+      </Button> */}
 
       {/* Chat Panel */}
       {isOpen && (

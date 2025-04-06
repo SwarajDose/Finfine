@@ -26,7 +26,7 @@ const Index = () => {
           </div>
         </main>
         
-        <AiAssistant />
+        {/* <AiAssistant /> */}
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from pymongo import MongoClient
+import pymongo
 from werkzeug.security import generate_password_hash, check_password_hash
 import jwt
 import datetime
@@ -20,9 +21,12 @@ app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'your-secret-key')
 
 # MongoDB connection
 # Note: In production, use environment variables for the connection string
-MONGO_URI = "mongodb+srv://swarajdose15:swaraj15@cluster0.etjhpoh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+MONGO_URI = 'mongodb://localhost:27017/finfine'
 try:
-    client = MongoClient(MONGO_URI)
+    # client = pymongo.MongoClient("mongodb://127.0.0.1:27017");
+    client = pymongo.MongoClient("mongodb://localhost:27017")
+
+
     db = client.finfine  # Database name
     users_collection = db.users  # Collection name
     accounts_collection = db.accounts

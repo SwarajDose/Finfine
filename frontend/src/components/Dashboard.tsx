@@ -1,4 +1,4 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+//import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Loader2 } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
@@ -10,6 +10,7 @@ import ChildrenFuturePlanning from "./ChildrenFuturePlanning";
 import MarriageFundTracker from "./MarriageFundTracker";
 import ProTips from "./ProTips";
 import { useDashboardSummary } from "@/hooks/use-dashboard";
+import ChatbotToggle from "../components/ChatbotToggle"; // adjust path if needed
 
 const Dashboard = () => {
   const { data, loading, error, refreshData } = useDashboardSummary();
@@ -77,6 +78,7 @@ const Dashboard = () => {
       </div>
       
       <ProTips />
+      <ChatbotToggle />
     </div>
   );
 };
